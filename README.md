@@ -14,4 +14,5 @@ kroz nelinearnu funkciju. Slojevi konvolucione mreze imaju neurone struktuirane 
 4.POOL sloj ce primeniti skaliranje u prostornom smislu – npr. ako je ulaz bio dimenzija [32, 32, 6], izlaz ce biti [16, 16, 6].
 
 5.FC (fully connected) sloj - predstavlja deo u konvolucionoj mrezi koji je isti kao klasicna neuronska mreza.
+
 Na kraju je uradjena provera, gde se nasumicno odabrane slike stavljaju u tabelu i oznacavaju sa imenom "Cat" ukoliko je na slici macka, a sa imenom "Dog" ukoliko je na slici pas.
