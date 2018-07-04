@@ -4,6 +4,7 @@ U ovom dokumentu implementiran je kod koji detektuje macku ili psa gde je korisc
 U prvom delu koda napravljena je funkcija (def create_label) koja kodira labelisane slike. Zatim su napravljene funkcije za ucitavanje slika za treniranje i slika pomocu koji ce se mreza testirati (def create_train_data , def create_test_data). Ove dve funkcije ucitavaju slike kao GRAYSCALE i menjaju velicinu slike na velicinu 120x120. Takodje, zapisuju slike u niz u .npy file-u.
 Nakon ucitavnja podataka, napravljen je model konvolucione neuralne mreze. Konvolucione neuronske mreze sastoje se od neurona koji imaju tezinske koeficijente koje treba obuciti. Svaki neuron prihvata neke ulazne informacije, primenjuje skalarni proizvod i propusta izlaz
 kroz nelinearnu funkciju. Slojevi konvolucione mreze imaju neurone struktuirane u 3 dimenzije, to su:sirina, visina, dubina (width, height, depth). Neuroni u sloju povezani su sa malim regionom na prethodnom sloju, umesto sa svim neuronima. Struktura neuronske mreze:
+
 1. Ulaz (input) – vrednosti piksela na slici u kanalima;
 
 2. Konvolucioni sloj (CONV) – racuna izlaze neurona koji su povezani sa lokalnim regionima na ulazu, za svaki se racuna skalarni proizvod izmedju tezinskog koeficijenta i regiona sa kojim je povezan na ulazu. Biramo koliko zelimo razlicitih filtera da koristimo kao izlaz.
